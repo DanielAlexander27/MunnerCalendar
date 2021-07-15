@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300&display=swap');
 
+/* Estilos generales */
 *{
     box-sizing: border-box;
     padding: 0%;
@@ -7,23 +8,117 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Barra de Navegación */
-.main-nav {
-    margin-top: 0px;
-    list-style: none;
-    padding: 20px;
-    background-color: #114b5f;
-    text-align: center;
+p {
+    font-weight: normal;
 }
 
-.main-nav__item{
-    display: inline-block;
-    font-size: 20px;
+
+/* Paleta de Colores */
+
+:root {
+    --color-1: #EEEEEE;
+    --color-2: #393E46;
+    --color-3: #76EAD7;
+    --color-4: #C4FB6D; 
+}
+
+/* barra de navegacion */
+nav {
+    background-color: #fff;
+}
+nav ul {
+    
+}
+.main-nav__item {
+    float: right;
+    list-style: none;
+    margin: 10px 0.2rem;
+    padding: 3px 0.6em;
+    font-size: 0.9rem;
+    
+}
+
+.main-nav__item:hover {
+    background-color: #7c889b42;
+    border-radius: 1rem;
 }
 
 .main-nav__item a {
-    color: white;
-    padding: 5px;
-    border-radius: 2px; /*redondea las esquinas de un cuadro */
     text-decoration: none;
-}   
+    color: #fff;
+}
+
+.main-nav__logo {
+    float: left;
+}
+/* Introduccion */
+article > section:nth-child(1) {
+    background-color: var(--color-2);
+}
+
+#intro {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    flex-flow: row;
+    display: flex;
+}
+
+#description {
+    display: flex;
+    float: right;
+    flex-flow: column;
+    margin: 1.5rem 20px;
+    padding: 0 1em 0 2em;
+    flex-basis: 60%;
+}
+
+#description h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#description p {
+    font-size: 1.1rem;
+}
+#shot {
+    flex-basis: 40%;
+    width: 100%;
+}
+
+#shot img {
+    width: 60%;
+    border-radius: 1%;
+}
+
+/* Beneficios */
+article > section:nth-child(2) {
+    background-color: var(--color-1);
+}
+
+article > section:nth-child(3) {
+    background-color: var(--color-1);
+}
+
+#footer {
+    background-color: var(--color-2);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav li{
+    display: inline-block;
+    padding: 10px 1rem;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+}
+#copyright {
+    float: right;
+    padding-top: 10px;
+    margin-right: 1rem;
+}
