@@ -26,9 +26,7 @@ p {
 nav {
     background-color: #fff;
 }
-nav ul {
-    
-}
+
 .main-nav__item {
     float: right;
     list-style: none;
@@ -62,6 +60,7 @@ article > section:nth-child(1) {
     overflow: hidden;
     flex-flow: row;
     display: flex;
+    color: #fff;
 }
 
 #description {
@@ -94,12 +93,31 @@ article > section:nth-child(1) {
 /* Beneficios */
 article > section:nth-child(2) {
     background-color: var(--color-1);
+    padding: 40px 0 0;
+    text-align: center;
+}
+
+#benefits {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 1.5rem;
+}
+
+.info-card {
+   margin: 0 3.2rem;
+   padding: 10px 2em 15px;
+   background-color: var(--color-3);
+}
+
+.info-card h3 {
+    padding-bottom: 10px;
 }
 
 article > section:nth-child(3) {
     background-color: var(--color-1);
 }
 
+/* Pie de pagina */
 #footer {
     background-color: var(--color-2);
     overflow: hidden;
@@ -109,16 +127,19 @@ article > section:nth-child(3) {
 
 .footer-nav li{
     display: inline-block;
-    padding: 10px 1rem;
+    padding: 10px 1.5rem;
 }
 
 .footer-nav li a {
     text-decoration: none;
     color: #fff;
     font-size: 0.8rem;
+    font-style: normal;
 }
 #copyright {
     float: right;
     padding-top: 10px;
     margin-right: 1rem;
+    font-style: normal;
+    color: #fff;
 }
