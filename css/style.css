@@ -100,7 +100,7 @@ article > section:nth-child(2) {
 #benefits {
     display: flex;
     justify-content: space-between;
-    margin: 20px 1.5rem;
+    margin: 0 1.5rem;
 }
 
 .info-card {
