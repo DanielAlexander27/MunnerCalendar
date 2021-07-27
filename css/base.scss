@@ -7,6 +7,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    display: block;
+    overflow: auto;
+}
+
 p {
     font-weight: normal;
 }
@@ -15,7 +20,8 @@ p {
     box-sizing: inherit;
 }
 
-$color-1:#EEEEEE;
-$color-2:#393E46;
-$color-3:#76EAD7;
-$color-4:#C4FB6D;
+$color-1:#FFFAFB;
+$color-2:#131515;
+$color-3:#339989;
+$color-4:#7DE2D1;
+$color-5:#ED6A5A;

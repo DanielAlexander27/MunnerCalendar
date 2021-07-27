@@ -6,6 +6,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  display: block;
+  overflow: auto;
+}
+
 p {
   font-weight: normal;
 }
@@ -16,22 +21,42 @@ p {
 
 /* barra de navegacion */
 nav {
-  background-color: #393E46;
+  background-color: #131515;
   height: 60px;
+}
+nav .main-nav::before {
+  content: "";
+  display: inline-block;
+  margin-top: -14px;
+  margin-bottom: 11px;
+  padding: 5px;
+  background-image: url(/image/JP.svg);
+  background-size: 120px;
+  width: 100px;
+  height: 100px;
 }
 
 .main {
   padding: 0 1em;
   display: block;
-  margin: -10px 0;
   position: relative;
   z-index: -1;
+}
+
+#logo {
+  display: block;
+  margin-top: 20px;
+}
+#logo img {
+  width: 80px;
+  height: 80px;
 }
 
 .main-nav__item {
   float: right;
   list-style: none;
   margin: 10px 0.2rem;
+  margin-top: 17px;
   padding: 3px 0.6em;
   font-size: 0.9rem;
 }
@@ -48,18 +73,18 @@ nav {
   float: left;
 }
 
-h2 {
+#title_main {
   display: flex;
   position: relative;
   padding: 20px 10rem;
   margin: 0 -8rem;
   color: #fff;
 }
-h2 span::after {
+#title_main span::after {
   width: 50ch;
   font-size: 23%;
 }
-h2 span::after {
+#title_main span::after {
   content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse non dolores repudiandae adipisci doloribus.Omnis tenetur iure optio.";
   display: block;
   position: absolute;
@@ -70,7 +95,7 @@ h2 span::after {
   font-size: 1.2rem;
   left: 16px;
 }
-h2 span::before {
+#title_main span::before {
   content: "";
   display: block;
   position: absolute;
@@ -79,11 +104,11 @@ h2 span::before {
   top: -100%;
   left: 0;
   transform: skew(0deg, 10deg);
-  background: #393E46;
+  background: #131515;
   background-attachment: fixed;
   z-index: -1;
 }
-h2::after {
+#title_main::after {
   content: "";
   display: block;
   width: 500px;
@@ -108,28 +133,67 @@ h2::after {
   position: absolute;
   z-index: -1;
   background-attachment: fixed;
-  background: #EEEEEE;
+  background: #FFFAFB;
 }
 
 .benefits {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 11px;
   position: relative;
   z-index: 1;
   top: 0;
   left: 0;
   padding: 20px 4rem;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(100px, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   margin: 0 1.5rem;
+  list-style: none;
 }
 .benefits ul, .benefits h3, .benefits p {
   padding: 0;
   margin: 0;
 }
+.benefits p {
+  letter-spacing: -0.05rem;
+  line-height: 22px;
+  color: #081927;
+}
+.benefits h3 {
+  font-size: 1.4rem;
+  color: #122a2e;
+}
+
+.info_card {
+  background: #339989;
+  margin: 0 1.2rem;
+  padding: 1.7rem;
+  border-radius: 7%;
+  box-shadow: 0 9px 22px rgba(59, 70, 69, 0.288);
+  position: relative;
+  z-index: 1;
+}
+
+#MunnerCalendar div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#MunnerCalendar div .description {
+  grid-column: 1/span 2;
+}
+#MunnerCalendar div::before {
+  content: "";
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  background: url(/image/MC.svg);
+}
+#MunnerCalendar h3 {
+  display: inline-block;
+  margin-left: 0;
+}
 
 #footer {
-  background-color: #393E46;
+  background-color: #131515;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
