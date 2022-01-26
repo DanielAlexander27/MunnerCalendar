@@ -21,8 +21,8 @@ p {
 
 /* barra de navegacion */
 nav {
-  background-color: #131515;
-  height: 60px;
+  background-color: #7DE2D1;
+  height: 100px;
 }
 nav .main-nav::before {
   content: "";
